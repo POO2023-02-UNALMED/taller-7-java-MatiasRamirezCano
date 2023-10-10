@@ -47,11 +47,6 @@ public class Libro extends Escrito {
 		return resumen() + "\n" + co_autor + "\n" + editorial + "\n" + edicion; 
 	}
 	
-	public static void main(String[] args) {
-		Libro libro = new Libro("Creacion", "El resplandor", "Stephen King", 599, "N/A", "Doubleday", "Primera", "Escrito largo");
-		System.out.println(libro);
-	}
-	
 	public int palabrasTotales(int palabrasPagina) {
 		return (getPaginas() * palabrasPagina * 2);
 	}
